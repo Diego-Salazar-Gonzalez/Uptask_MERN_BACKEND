@@ -20,7 +20,7 @@ const corsOptions = {
     if (whiteList.includes(origin)) {
       callback(null, true);
     } else {
-      callback(new Error("Error de Cors"));
+      callback(null,true);
     }
   },
 };
