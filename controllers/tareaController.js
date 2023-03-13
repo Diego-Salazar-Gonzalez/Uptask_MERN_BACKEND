@@ -100,7 +100,7 @@ const cambiarEstado = async (req, res) => {
   }
   if (
     tarea.proyecto.creador.toString() !== req.usuario._id.toString() &&
-    !tarea.proyecto.colaboradores.som(
+    !tarea.proyecto.colaboradores.some(
       (colaborador) => colaborador._id.toString() === req.usuario._id.toString()
     )
   ) {
